@@ -1,0 +1,34 @@
+{
+  "name": "twilight",
+  "version": "1.0.0",
+  "private": true,
+  "author": "Michael Silber",
+  "description": "Before Dawn, there was only Twilight",
+  "bugs": "https://github.com/cfxd/twilight/issues",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cfxd/twilight.git"
+  },
+  "scripts": {
+    "start": "run-p -sr shopify:serve tailwind:watch",
+    "deploy": "run-s tailwind:build && shopify theme push",
+    "deploy:new": "run-s tailwind:build && shopify theme push --unpublished",
+    "lint": "run-s -c lint:*",
+    "lint:js": "eslint src/**/*.js --config .eslintrc.js",
+    "lint:css": "stylelint src/**/*.css --config .stylelintrc.js",
+    "shopify:check": "shopify theme check",
+    "shopify:serve": "shopify theme serve",
+    "tailwind:watch": "npx tailwindcss -i ./assets/tailwind-source.css -o ./assets/tailwind.css --watch",
+    "tailwind:build": "npx tailwindcss -i ./assets/tailwind-source.css -o ./assets/tailwind.css"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.2",
+    "@tailwindcss/typography": "^0.5.2",
+    "eslint": "^8.18.0",
+    "npm-run-all": "^4.1.5",
+    "stylelint": "^14.9.1",
+    "stylelint-config-recommended": "^8.0.0",
+    "tailwindcss": "^3.1.4"
+  }
+}
