@@ -1,5 +1,7 @@
 # Twilight
 
+<img src="https://raw.githubusercontent.com/cfxd/twilight/main/logo.svg?sanitize=true" alt="Twilight">
+
 Twilight is based on [Dawn](https://github.com/Shopify/dawn/), the Shopify team's very own recommended starting point for theme development.
 
 * **Minimalist:** Uses Dawn patterns
