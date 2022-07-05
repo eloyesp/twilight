@@ -1,6 +1,6 @@
 # Twilight
 
-<img src="https://raw.githubusercontent.com/cfxd/twilight/main/logo.svg?sanitize=true" alt="Twilight">
+<img src="https://repository-images.githubusercontent.com/508440993/9e618651-d8e6-4768-bc26-d31a90370ecb" alt="Twilight">
 
 Twilight is based on [Dawn](https://github.com/Shopify/dawn/), the Shopify team's very own recommended starting point for theme development.
 
