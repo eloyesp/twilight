@@ -3,146 +3,150 @@
     "name": "theme_info",
     "theme_name": "Twilight (Dawn v6.0.2)",
     "theme_version": "1.0.0",
-    "theme_author": "Michael Silber",
-    "theme_documentation_url": "https://help.shopify.com/manual/online-store/themes",
-    "theme_support_url": "https://support.shopify.com/"
+    "theme_author": "Michael Silbers",
+    "theme_documentation_url": "https://github.com/cfxd/twilight#readme",
+    "theme_support_url": "https://github.com/cfxd/twilight/issues"
   },
   {
-    "name": "t:settings_schema.search_input.name",
+    "name": "brand",
     "settings": [
       {
-        "type": "header",
-        "content": "t:settings_schema.search_input.settings.header.content"
+        "id": "rectangular_logo",
+        "type": "image_picker",
+        "label": "Rectangular Logo"
       },
       {
-        "type": "checkbox",
-        "id": "predictive_search_enabled",
-        "default": true,
-        "label": "t:settings_schema.search_input.settings.predictive_search_enabled.label"
+        "id": "square_logo",
+        "type": "image_picker",
+        "label": "Square Logo"
       },
       {
-        "type": "checkbox",
-        "id": "predictive_search_show_vendor",
-        "default": false,
-        "label": "t:settings_schema.search_input.settings.predictive_search_show_vendor.label",
-        "info": "t:settings_schema.search_input.settings.predictive_search_show_vendor.info"
+        "id": "favicon",
+        "type": "image_picker",
+        "label": "Favicon"
       },
       {
-        "type": "checkbox",
-        "id": "predictive_search_show_price",
-        "default": false,
-        "label": "t:settings_schema.search_input.settings.predictive_search_show_price.label",
-        "info": "t:settings_schema.search_input.settings.predictive_search_show_price.info"
+        "id": "headline",
+        "type": "inline_richtext",
+        "label": "Headline"
+      },
+      {
+        "id": "description",
+        "type": "richtext",
+        "label": "Description"
       }
     ]
   },
   {
-    "name": "t:settings_schema.cart.name",
+    "name": "colors",
     "settings": [
       {
-        "type": "select",
-        "id": "cart_type",
-        "options": [
-          {
-            "value": "drawer",
-            "label": "t:settings_schema.cart.settings.cart_type.drawer.label"
-          },
-          {
-            "value": "page",
-            "label": "t:settings_schema.cart.settings.cart_type.page.label"
-          },
-          {
-            "value": "notification",
-            "label": "t:settings_schema.cart.settings.cart_type.notification.label"
-          }
-        ],
-        "default": "notification",
-        "label": "t:settings_schema.cart.settings.cart_type.label"
+        "id": "main_foreground",
+        "type": "color",
+        "label": "Main Foreground"
       },
       {
-        "type": "checkbox",
-        "id": "show_vendor",
-        "label": "t:settings_schema.cart.settings.show_vendor.label",
-        "default": false
+        "id": "main_background",
+        "type": "color",
+        "label": "Main Background"
       },
       {
-        "type": "checkbox",
-        "id": "show_cart_note",
-        "label": "t:settings_schema.cart.settings.show_cart_note.label",
-        "default": false
+        "id": "alt_foreground",
+        "type": "color",
+        "label": "Alt Foreground"
       },
       {
-        "type": "header",
-        "content": "t:settings_schema.cart.settings.cart_drawer.header"
+        "id": "alt_background",
+        "type": "color",
+        "label": "Alt Background"
       },
       {
-        "type": "collection",
-        "id": "cart_drawer_collection",
-        "label": "t:settings_schema.cart.settings.cart_drawer.collection.label",
-        "info": "t:settings_schema.cart.settings.cart_drawer.collection.info"
+        "id": "accent_primary",
+        "type": "color",
+        "label": "Accent Primary"
+      },
+      {
+        "id": "accent_secondary",
+        "type": "color",
+        "label": "Accent Secondary"
+      },
+      {
+        "id": "accent_tertiary",
+        "type": "color",
+        "label": "Accent Tertiary"
       }
     ]
   },
   {
-    "name": "t:settings_schema.social-media.name",
+    "name": "typography",
     "settings": [
       {
-        "type": "header",
-        "content": "t:settings_schema.social-media.settings.header.content"
+        "id": "header_font",
+        "type": "font_picker",
+        "default": "sans-serif",
+        "label": "Header Font"
       },
       {
-        "type": "text",
-        "id": "social_twitter_link",
-        "label": "t:settings_schema.social-media.settings.social_twitter_link.label",
-        "info": "t:settings_schema.social-media.settings.social_twitter_link.info"
+        "id": "body_font",
+        "type": "font_picker",
+        "default": "serif",
+        "label": "Body Font"
       },
       {
+        "id": "alt_font",
+        "type": "font_picker",
+        "default": "mono",
+        "label": "Alt Font"
+      }
+    ]
+  },
+  {
+    "name": "social",
+    "settings": [
+      {
+        "id": "facebook",
         "type": "text",
-        "id": "social_facebook_link",
-        "label": "t:settings_schema.social-media.settings.social_facebook_link.label",
-        "info": "t:settings_schema.social-media.settings.social_facebook_link.info"
+        "label": "Facebook"
       },
       {
+        "id": "instagram",
         "type": "text",
-        "id": "social_pinterest_link",
-        "label": "t:settings_schema.social-media.settings.social_pinterest_link.label",
-        "info": "t:settings_schema.social-media.settings.social_pinterest_link.info"
+        "label": "Instagram"
       },
       {
+        "id": "youtube",
         "type": "text",
-        "id": "social_instagram_link",
-        "label": "t:settings_schema.social-media.settings.social_instagram_link.label",
-        "info": "t:settings_schema.social-media.settings.social_instagram_link.info"
+        "label": "Youtube"
       },
       {
+        "id": "tiktok",
         "type": "text",
-        "id": "social_tiktok_link",
-        "label": "t:settings_schema.social-media.settings.social_tiktok_link.label",
-        "info": "t:settings_schema.social-media.settings.social_tiktok_link.info"
+        "label": "Tiktok"
       },
       {
+        "id": "twitter",
         "type": "text",
-        "id": "social_tumblr_link",
-        "label": "t:settings_schema.social-media.settings.social_tumblr_link.label",
-        "info": "t:settings_schema.social-media.settings.social_tumblr_link.info"
+        "label": "Twitter"
       },
       {
+        "id": "snapchat",
         "type": "text",
-        "id": "social_snapchat_link",
-        "label": "t:settings_schema.social-media.settings.social_snapchat_link.label",
-        "info": "t:settings_schema.social-media.settings.social_snapchat_link.info"
+        "label": "Snapchat"
       },
       {
+        "id": "pinterest",
         "type": "text",
-        "id": "social_youtube_link",
-        "label": "t:settings_schema.social-media.settings.social_youtube_link.label",
-        "info": "t:settings_schema.social-media.settings.social_youtube_link.info"
+        "label": "Pinterest"
       },
       {
+        "id": "tumblr",
         "type": "text",
-        "id": "social_vimeo_link",
-        "label": "t:settings_schema.social-media.settings.social_vimeo_link.label",
-        "info": "t:settings_schema.social-media.settings.social_vimeo_link.info"
+        "label": "Tumblr"
+      },
+      {
+        "id": "vimeo",
+        "type": "text",
+        "label": "Vimeo"
       }
     ]
   }

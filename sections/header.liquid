@@ -1,1 +1,21 @@
 <code>header.liquid</code>
+
+{% schema %}
+{
+  "name": "header",
+  "tag": "header",
+  "settings": [
+    {
+      "id": "logo",
+      "type": "image_picker",
+      "label": "Logo"
+    },
+    {
+      "id": "link_list",
+      "type": "link_list",
+      "default": "main-menu",
+      "label": "Link List"
+    }
+  ]
+}
+{% endschema %}

@@ -1,1 +1,39 @@
 <code>footer.liquid</code>
+
+{% schema %}
+{
+  "name": "footer",
+  "tag": "footer",
+  "settings": [
+    {
+      "id": "logo",
+      "type": "image_picker",
+      "label": "Logo"
+    },
+    {
+      "id": "copyright_line",
+      "type": "inline_richtext",
+      "label": "Copyright Line"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "link_list",
+      "type": "link_list",
+      "settings": [
+        {
+          "id": "heading",
+          "type": "inline_richtext",
+          "label": "Heading"
+        },
+        {
+          "id": "menu",
+          "type": "link_list",
+          "default": "footer",
+          "label": "Menu"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,63 @@
+---
+theme:
+  name: Twilight (Dawn v6.0.2)
+  version: 1.0.0
+  author: Michael Silbers
+  documentation: https://github.com/cfxd/twilight#readme
+  support: https://github.com/cfxd/twilight/issues
+
+categories:
+  brand:
+    rectangular_logo: image_picker
+    square_logo: image_picker
+    favicon: image_picker
+    headline: inline_richtext
+    description: richtext
+  colors:
+    main_foreground: color
+    main_background: color
+    alt_foreground: color
+    alt_background: color
+    accent_primary: color
+    accent_secondary: color
+    accent_tertiary: color
+  typography:
+    header_font:
+      type: font_picker
+      default: sans-serif
+    body_font:
+      type: font_picker
+      default: serif
+    alt_font:
+      type: font_picker
+      default: mono
+  social:
+    facebook: text
+    instagram: text
+    youtube: text
+    tiktok: text
+    twitter: text
+    snapchat: text
+    pinterest: text
+    tumblr: text
+    vimeo: text
+
+sections:
+
+  header:
+    tag: header
+    logo: image_picker
+    link_list:
+      type: link_list
+      default: main-menu
+
+  footer:
+    tag: footer
+    logo: image_picker
+    copyright_line: inline_richtext
+    blocks:
+      link_list:
+        heading: inline_richtext
+        menu:
+          type: link_list
+          default: footer
